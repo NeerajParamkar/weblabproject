@@ -5,6 +5,7 @@ import { createContext, useContext, useState } from "react"
 import type { User } from "@/lib/types"
 import { mockTutors } from "@/lib/mock-tutors"
 
+
 interface AuthContextType {
   user: User | null
   login: (email: string, password: string, role: "student" | "tutor") => Promise<void>
